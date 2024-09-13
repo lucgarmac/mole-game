@@ -1,0 +1,95 @@
+{
+  "configVersion": 1,
+  "timestamp": 1726224055935,
+  "index": "/mole-game/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/mole-game/chunk-7MNNHFH5.js",
+        "/mole-game/chunk-FGESSAU5.js",
+        "/mole-game/chunk-OBNG2VUJ.js",
+        "/mole-game/chunk-VSG5BIXN.js",
+        "/mole-game/chunk-WAOSROZF.js",
+        "/mole-game/chunk-XRQPM2Z5.js",
+        "/mole-game/favicon.ico",
+        "/mole-game/images/mole.jpg",
+        "/mole-game/index.html",
+        "/mole-game/main-2XZKBK2Q.js",
+        "/mole-game/manifest.webmanifest",
+        "/mole-game/polyfills-SCHOHYNV.js",
+        "/mole-game/scripts-EEEIPNC3.js",
+        "/mole-game/styles-UMJYDQX5.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/mole-game/icons/icon-128x128.png",
+        "/mole-game/icons/icon-144x144.png",
+        "/mole-game/icons/icon-152x152.png",
+        "/mole-game/icons/icon-192x192.png",
+        "/mole-game/icons/icon-384x384.png",
+        "/mole-game/icons/icon-512x512.png",
+        "/mole-game/icons/icon-72x72.png",
+        "/mole-game/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/mole-game/chunk-7MNNHFH5.js": "4e37bd9bf66609806842245e53a48747ba0dc46e",
+    "/mole-game/chunk-FGESSAU5.js": "7803ecc7edc61549355b77a305ba378539336491",
+    "/mole-game/chunk-OBNG2VUJ.js": "b745c9ac68893e4cc43a2af6594b235c9a092565",
+    "/mole-game/chunk-VSG5BIXN.js": "f9443196c939b3413b21fec93157b115c8f195c9",
+    "/mole-game/chunk-WAOSROZF.js": "43d6dca249e0ff0c198fa51a542dc3f2620292ec",
+    "/mole-game/chunk-XRQPM2Z5.js": "e030354ab5ace87c83255aef492fd1373caab3e5",
+    "/mole-game/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/mole-game/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/mole-game/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/mole-game/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/mole-game/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/mole-game/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/mole-game/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/mole-game/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/mole-game/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/mole-game/images/mole.jpg": "d10e6b3e7b44080c5e5bd07292830d25cd0a0d37",
+    "/mole-game/index.html": "965d3c5394a06560fc5a52eeb5b0ef8e405b9edb",
+    "/mole-game/main-2XZKBK2Q.js": "27519c928247dcf1d5673fe1c17f0e2aeceb52b7",
+    "/mole-game/manifest.webmanifest": "4c8f3c2f33de2552eae971ff4da2fa27c62d7efa",
+    "/mole-game/polyfills-SCHOHYNV.js": "d45c76c5960bab3ace7fd6d211b9579456241f8a",
+    "/mole-game/scripts-EEEIPNC3.js": "2318ded8c885787a1645385a82c1ca883c359034",
+    "/mole-game/styles-UMJYDQX5.css": "8548a828499e7db76eba9190b49dd11e33ae1edf"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
