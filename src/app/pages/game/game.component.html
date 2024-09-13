@@ -1,0 +1,77 @@
+
+<header class="game__header">
+  <div class="game__header__user-info">
+    <fa-icon [icon]="iconUser" size="xl"></fa-icon>
+    <h3 class="user-text">{{username()}}</h3>
+  </div>
+
+  <div class="game__header__config">
+    <div class="game__header__config__level">
+      <span>Level</span>
+        <select
+          data-cy="level-select"
+          class="level-selector form-select form-select-sm"
+          aria-label="Dificulty game selector"
+          [(ngModel)]="levelOption"
+          (ngModelChange)="onLevelChange($event)">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+    </div>
+
+    <div class="game__header__config__num-moles">
+      <span>Num moles to show</span>
+        <select
+          data-cy="num-moles-select"
+          class="num-mole-selector form-select form-select-sm"
+          aria-label="Moles to show selector"
+          [(ngModel)]="numMolesOption"
+          (ngModelChange)="onNumMolesChange($event)">
+          <option [value]="1">1</option>
+          <option [value]="2">2</option>
+          <option [value]="3">3</option>
+        </select>
+    </div>
+  </div>
+</header>
+
+<aside class="game__player-points">
+  <h3>
+    Points: <span data-cy="points">{{playerPoints()}}</span>
+  </h3>
+</aside>
+
+@if(gameService.board?.length) {
+  <section class="game__board">
+    <ng-container *ngFor="let row of gameService.board; let i=index">
+      <ng-container *ngFor="let col of row; let j=index">
+        <p>
+          <app-square
+            [isVisibleMole]="col === 'M'"
+            (click)="onSquareClick(i,j)"></app-square>
+        </p>
+      </ng-container>
+    </ng-container>
+
+  </section>
+}
+
+<footer class="game__footer">
+  @if(isStartedGame()) {
+    <app-button
+      data-cy="stop-btn"
+      [label]="'Stop'"
+      (onclick)="onStopGame()">
+    </app-button>
+  } @else {
+    <app-button
+      data-cy="play-btn"
+      [label]="'Play'"
+      (onclick)="onStartGame()">
+    </app-button>
+  }
+
+</footer>
+
+

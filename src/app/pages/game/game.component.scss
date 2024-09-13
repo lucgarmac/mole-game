@@ -1,0 +1,70 @@
+.game {
+  display: flex;
+
+  position: relative;
+  width: 100%;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #458be4;
+    color: ghostwhite;
+    padding: 2rem;
+
+    &__user-info {
+      display: flex;
+      align-items: start;
+      align-content: center;
+      margin-bottom: 1.5rem;
+      .user-text {
+        margin-left: 0.75rem;
+        margin-bottom: 0;
+      }
+    }
+
+    &__config {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+    }
+  }
+
+  &__player-points {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1em 0;
+    padding: 0 1em;
+  }
+
+  &__board {
+    margin: 2em 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 5rem);
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 576px) {
+  .game {
+    &__header {
+      flex-direction: row;
+      &__config {
+        justify-content: flex-end;
+        &__level {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
