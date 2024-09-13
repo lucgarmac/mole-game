@@ -39,7 +39,7 @@ jobs:
 
       #Route file rename
       - name: Rename index for routing
-        run: mv dist/index.html dist/404.html
+        run: mv dist/mole-game/index.html dist/mole-game/404.html
 
       #Deploy to Github pages
       - name: Deploy to Github Pages
