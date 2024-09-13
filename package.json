@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start-pwa": "ng build --configuration production && angular-http-server --path dist/mole-game/browser",
+    "start-pwa": "ng build --configuration production && angular-http-server --path dist/mole-game/",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "build-pro": "ng build --configuration production --base-href /mole-game/browser",
