@@ -45,6 +45,6 @@ jobs:
       - name: Deploy to Github Pages
         uses: crazy-max/ghaction-github-pages@v4.0.0
         with:
-          build_dir: dist/mole-game/
+          build_dir: dist/mole-game
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
