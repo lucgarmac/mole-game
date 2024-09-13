@@ -21,11 +21,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       #Setup node
       - name: Setup nodejs
-      - uses: actions/setup-node@v4.0.3
+        uses: actions/setup-node@v4.0.3
         with:
           node-version: 18.x
 
