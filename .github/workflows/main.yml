@@ -37,10 +37,6 @@ jobs:
       - name: Build app bundle
         run: npm run build-pro
 
-      #Route file rename
-      - name: Rename index for routing
-        run: mv dist/mole-game/browser/index.html dist/mole-game/browser/404.html
-
       #Deploy to Github pages
       - name: Deploy to Github Pages
         uses: crazy-max/ghaction-github-pages@v4.0.0
