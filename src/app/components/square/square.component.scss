@@ -1,0 +1,19 @@
+.square {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 1px;
+  border: 1px solid #464646;
+  border-radius: 4px;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+
+  &--visible-mole {
+    cursor:pointer;
+
+    img {
+      width: 100%;
+    }
+  }
+}
